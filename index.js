@@ -22,11 +22,12 @@ function resetScores() {
 //Timer
 
 function startTimer() {
-  if (gameStarted) return; 
+  if (gameStarted) return;
   gameStarted = true;
 
   clearInterval(timerInterval);
-  let timeLeft = 60;
+  let timeLeft = 20;
+
   const timeEl = document.getElementById("time");
   const startBtn = document.querySelector(".timer button");
 
